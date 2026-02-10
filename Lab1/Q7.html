@@ -1,0 +1,81 @@
+<!-- Create a webpage using HTML only that demonstrates the use of
+different types of lists. Display an unordered list showing at least
+five favorite subjects or skills and an ordered list showing three
+daily activities or steps of a process. Also include a description list
+(<dl>) with at least two terms and their corresponding descriptions.
+Demonstrate list nesting by placing one list inside another and as a
+mini challenge, change the list style using the type attribute and
+create a mixed list where an unordered list is placed inside an
+ordered list. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>HTML Lists Example</h1>
+
+    <!-- Unordered List -->
+    <h2>My Favorite Subjects / Skills</h2>
+    <ul type="circle">
+        <li>Computer Engineering</li>
+        <li>Web Development</li>
+        <li>Data Structures</li>
+        <li>Machine Learning</li>
+        <li>Problem Solving</li>
+    </ul>
+
+    <!-- Ordered List -->
+    <h2>Daily Activities</h2>
+    <ol type="1">
+        <li>Wake up early</li>
+        <li>Attend classes</li>
+        <li>Practice coding</li>
+    </ol>
+
+    <!-- Description List -->
+    <h2>Description List</h2>
+    <dl>
+        <dt>HTML</dt>
+        <dd>HyperText Markup Language used to structure web pages.</dd>
+
+        <dt>CSS</dt>
+        <dd>Cascading Style Sheets used to style web pages.</dd>
+    </dl>
+
+    <!-- Nested List -->
+    <h2>Nested List Example</h2>
+    <ul>
+        <li>Frontend Technologies
+            <ul type="square">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+            </ul>
+        </li>
+        <li>Backend Technologies
+            <ul type="square">
+                <li>Node.js</li>
+                <li>Python</li>
+            </ul>
+        </li>
+    </ul>
+
+    <!-- Mixed List (Unordered List inside Ordered List) -->
+    <h2>Steps to Build a Website (Mixed List)</h2>
+    <ol type="A">
+        <li>Plan the Website</li>
+        <li>Design the Structure
+            <ul type="disc">
+                <li>Create wireframe</li>
+                <li>Decide layout</li>
+                <li>Select color scheme</li>
+            </ul>
+        </li>
+        <li>Develop and Test</li>
+    </ol>
+</body>
+</html>

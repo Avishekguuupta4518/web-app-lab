@@ -1,0 +1,67 @@
+<!-- Design a student registration form using HTML and CSS that collects user information such as username, email, password, age, gender, course and acceptance of terms and conditions. Use CSS to style the form elements including text fields, radio buttons, dropdown lists and checkboxes to make the form visually appealing and user-friendly. Apply layout techniques such as spacing, alignment, borders, background colors and font styling to organize the form in a structured manner. Ensure that form validation messages and required fields are clearly visible and highlight the input fields when focused. As a challenge, use CSS to display a message box or style the alert area that appears if the user’s age is less than 16 and apply hover or focus effects on the submit button to indicate interactivity -->
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Registration Form</title>
+    <link rel="stylesheet" href="Q7.css" />
+  </head>
+  <body>
+    <div class="form-container">
+      <h2>Student Registration</h2>
+      <form id="registrationForm">
+        <label class="required">Username</label>
+        <input type="text" name="username" required />
+
+        <label class="required">Email</label>
+        <input type="email" name="email" required />
+
+        <label class="required">Password</label>
+        <input type="password" name="password" required />
+
+        <label class="required">Age</label>
+        <input type="number" name="age" id="age" required />
+
+        <div class="gender-options">
+          <label class="required">Gender</label>
+          <label
+            ><input type="radio" name="gender" value="Male" required />
+            Male</label
+          >
+          <label
+            ><input type="radio" name="gender" value="Female" /> Female</label
+          >
+          <label
+            ><input type="radio" name="gender" value="Other" /> Other</label
+          >
+        </div>
+
+        <label class="required">Course</label>
+        <select name="course" required>
+          <option value="">Select a course</option>
+          <option value="Computer Science">Computer Science</option>
+          <option value="Mathematics">Mathematics</option>
+          <option value="Physics">Physics</option>
+          <option value="Economics">Economics</option>
+        </select>
+
+        <div class="terms">
+          <label
+            ><input type="checkbox" name="terms" required /> I accept the terms
+            and conditions</label
+          >
+        </div>
+
+        <div class="alert" id="ageAlert">
+          You must be at least 16 years old to register.
+        </div>
+
+        <button type="submit">Register</button>
+      </form>
+    </div>
+
+    <script src="Q7.js"></script>
+  </body>
+</html>

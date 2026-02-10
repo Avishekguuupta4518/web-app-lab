@@ -1,0 +1,163 @@
+/* General page styling */
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color: #f8fafc;
+}
+
+/* Headings */
+h1, h2 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+/* Common box style */
+.box {
+    width: 120px;
+    height: 80px;
+    padding: 10px;
+    background-color: #bfdbfe;
+    border: 2px solid #1d4ed8;
+    text-align: center;
+}
+
+
+/* Container for positioning demo */
+.position-container {
+    position: relative;  /* Reference for absolute element */
+    height: 200px;
+    border: 2px dashed #9ca3af;
+    margin-bottom: 30px;
+}
+
+/* Static position (default) */
+.static-box {
+    position: static;
+}
+
+/* Relative position */
+.relative-box {
+    position: relative;
+    top: 20px;
+    left: 20px;
+    background-color: #bbf7d0;
+}
+
+/* Absolute position */
+.absolute-box {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #fecaca;
+}
+
+/* Fixed position */
+.fixed-box {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    background-color: #fde68a;
+}
+
+/* Sticky position */
+.sticky-box {
+    position: sticky;
+    top: 0;
+    padding: 10px;
+    background-color: #c7d2fe;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+.display-box {
+    padding: 10px;
+    margin: 5px;
+    background-color: #ddd6fe;
+    border: 1px solid #6d28d9;
+}
+
+/* Block display */
+.block {
+    display: block;
+}
+
+/* Inline display */
+.inline {
+    display: inline;
+}
+
+/* Inline-block display */
+.inline-block {
+    display: inline-block;
+    width: 120px;
+}
+
+/* None display (hidden) */
+.none {
+    display: none;
+}
+
+/* Z-INDEX */
+
+.z-container {
+    position: relative;
+    height: 150px;
+    margin-bottom: 30px;
+}
+
+/* Overlapping boxes */
+.z-box {
+    position: absolute;
+    width: 120px;
+    height: 80px;
+    padding: 10px;
+    color: white;
+}
+
+/* z-index values */
+.box1 {
+    background-color: #2563eb;
+    top: 20px;
+    left: 20px;
+    z-index: 1;
+}
+
+.box2 {
+    background-color: #16a34a;
+    top: 40px;
+    left: 40px;
+    z-index: 2;
+}
+
+.box3 {
+    background-color: #dc2626;
+    top: 60px;
+    left: 60px;
+    z-index: 3;
+}
+
+/*  OVERFLOW  */
+
+.overflow {
+    width: 250px;
+    height: 80px;
+    border: 2px solid #4b5563;
+    margin: 10px auto;
+    padding: 5px;
+}
+
+/* Overflow hidden */
+.hidden {
+    overflow: hidden;
+}
+
+/* Overflow scroll */
+.scroll {
+    overflow: scroll;
+}
+
+/* Overflow auto */
+.auto {
+    overflow: auto;
+}

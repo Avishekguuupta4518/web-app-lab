@@ -1,0 +1,45 @@
+<!-- Create a webpage that demonstrates the CSS Box Model. Design multiple <div> elements and apply margin, padding, border, width, and height properties to each element. Use different border styles and border radius values. Show the difference between box-sizing: content-box and box-sizing: border-box by applying them to different elements. Ensure proper spacing between elements so that the effect of each box model property is clearly visible. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Q1.css">
+    <title>CSS Box Model Demo</title>
+</head>
+<body>
+    <!-- Main heading -->
+<h1>CSS Box Model Demonstration</h1>
+
+<!-- Container to hold all boxes -->
+<div class="container">
+
+    <!-- Box using default box-sizing: content-box -->
+    <div class="box content-box">
+        <h3>Content Box</h3>
+        <p>box-sizing: content-box</p>
+    </div>
+
+    <!-- Box using box-sizing: border-box -->
+    <div class="box border-box">
+        <h3>Border Box</h3>
+        <p>box-sizing: border-box</p>
+    </div>
+
+    <!-- Box with rounded corners -->
+    <div class="box rounded-box">
+        <h3>Rounded Box</h3>
+        <p>Border Radius Example</p>
+    </div>
+
+    <!-- Box with dashed border style -->
+    <div class="box dashed-box">
+        <h3>Dashed Border</h3>
+        <p>Different Border Style</p>
+    </div>
+
+</div>
+
+</body>
+</html>

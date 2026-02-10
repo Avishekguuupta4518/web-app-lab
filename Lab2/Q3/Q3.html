@@ -1,0 +1,93 @@
+<!-- Create a webpage that demonstrates CSS positioning and display properties. Use different elements and apply static, relative, absolute, fixed, and sticky positioning. Apply display values such as block, inline, inline-block, and none. Use z-index to show overlapping elements and apply overflow properties such as hidden, scroll and auto where necessary. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Q3.css">
+    <title>CSS Positioning & Display Properties</title>
+</head>
+<body>
+
+<h1>CSS Positioning & Display Properties</h1>
+
+<!--  POSITIONING SECTION  -->
+<h2>Positioning Examples</h2>
+
+<div class="position-container">
+    <!-- Static position (default) -->
+    <div class="box static-box">
+        Static
+    </div>
+
+    <!-- Relative position -->
+    <div class="box relative-box">
+        Relative
+    </div>
+
+    <!-- Absolute position (relative to container) -->
+    <div class="box absolute-box">
+        Absolute
+    </div>
+</div>
+
+<!-- Fixed position (relative to viewport) -->
+<div class="box fixed-box">
+    Fixed
+</div>
+
+<!-- Sticky position -->
+<div class="sticky-box">
+    Sticky Header
+</div>
+
+<!--  DISPLAY SECTION  -->
+<h2>Display Property Examples</h2>
+
+<!-- Block elements -->
+<div class="display-box block">Block</div>
+<div class="display-box block">Block</div>
+
+<!-- Inline elements -->
+<span class="display-box inline">Inline</span>
+<span class="display-box inline">Inline</span>
+
+<br><br>
+
+<!-- Inline-block elements -->
+<span class="display-box inline-block">Inline-Block</span>
+<span class="display-box inline-block">Inline-Block</span>
+
+<!-- Display none -->
+<div class="display-box none">This will not be visible</div>
+
+<!--  Z-INDEX SECTION  -->
+<h2>Z-Index Example</h2>
+
+<div class="z-container">
+    <div class="z-box box1">z-index 1</div>
+    <div class="z-box box2">z-index 2</div>
+    <div class="z-box box3">z-index 3</div>
+</div>
+
+<!--  OVERFLOW SECTION  -->
+<h2>Overflow Examples</h2>
+
+<div class="overflow hidden">
+    Overflow Hidden: Extra content is hidden.
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+</div>
+
+<div class="overflow scroll">
+    Overflow Scroll: Scrollbars always visible.
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+</div>
+
+<div class="overflow auto">
+    Overflow Auto: Scrollbars appear if needed.
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+</div>
+
+</body>
+</html>
