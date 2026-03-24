@@ -55,48 +55,46 @@ Follow these steps to run the project locally:
 ### **1. Clone the Repository**
 
 ```bash
-git clone https://github.com/<your-username>/<repo-name>.git
-cd <repo-name>
+git clone https://github.com/Avishekguuupta4518/web-app-lab.git
+cd registration_project
 ```
+
+### **2. Create Virtual Environment**
 ```
-2. Create Virtual Environment
 python -m venv venv
-# Activate it:
-# Windows
-venv\Scripts\activate
-# Mac/Linux
-source venv/bin/activate
 ```
+## Activate it:
+### For Windows
+```venv\Scripts\activate```
+### For Mac/Linux
+```source venv/bin/activate```
+
+### **3. Install Dependencies**
 ```
-3. Install Dependencies
 pip install django
 ```
+
+### **4. Apply Migrations**
 ```
-4. Apply Migrations
 python manage.py makemigrations
 python manage.py migrate
 ```
+### **5. Create Superuser (Optional for Admin)**
 ```
-5. Create Superuser (Optional for Admin)
 python manage.py createsuperuser
 Enter a username, email, and password
 This allows you to manage users via http://127.0.0.1:8000/admin/
 ```
+### **6. Run the Server**
 ```
-6. Run the Server
 python manage.py runserver
 Open browser and visit: http://127.0.0.1:8000/ → Registration form
 Visit http://127.0.0.1:8000/list/ → List of all registered users
 ```
+---
+
 # Usage
 Fill out the registration form and click Register.
 Your data will be saved in the database.
 Click View All Users to see all registered users.
 Admin can also add/edit/delete users at http://127.0.0.1:8000/admin/.
-
-
-# Technologies Used
-Python 3.x
-Django 6.x
-SQLite (default database)
-HTML/CSS for templates
